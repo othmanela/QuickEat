@@ -1,0 +1,84 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\})}{\leveltext\leveltemplateid1\'02\'00);}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid2\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\})}{\leveltext\leveltemplateid101\'02\'00);}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww14200\viewh14520\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 README\
+\
+\ul Quickeat - CIS330 Group 16\ulnone \
+\
+Here is a description of each of the folders in our project:\
+\
+
+\b src
+\b0 \
+The Java files are all located within the src folder.  They are organized into packages as follows:\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	1)	}DatabaseAccess - A package that handles all the details of database access, and provides a uniform interface for the rest of the project. The only package that can execute arbitrary SQL code.\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}Algorithm: A class that is similar to the ExtDBAccess class in that it implements a series of queries, but given special treatment as its own class because of the complexity of the query. Implements the quick eat algorithm which finds the fastest place to eat based on the current time and location of the user\
+{\listtext	\uc0\u8259 	}Business: A container class used for the Gson import\
+{\listtext	\uc0\u8259 	}ExtDBAccess: Provides an implementation the ExtDBAccessI interface. Actually implements the queries requested by other group members\
+{\listtext	\uc0\u8259 	}ExtDBAccessI: An interface that other group members can populate to request new database queries\
+{\listtext	\uc0\u8259 	}JSONImport: Handles importing the original Yelp data from the JSON format\
+{\listtext	\uc0\u8259 	}JSONResultBuilder: Automatically generates JSON format for arbitrary ResultSet objects based on ResultSetMetadata\
+{\listtext	\uc0\u8259 	}Review: A container class used for the Gson import\
+{\listtext	\uc0\u8259 	}SQLInterface: A singleton that handles connecting to and executing sql code against the database\
+{\listtext	\uc0\u8259 	}TestDB: Used for testing\
+{\listtext	\uc0\u8259 	}User: A container class used for the Gson import\
+{\listtext	\uc0\u8259 	}Votes: A container class used for the Gson import\
+{\listtext	\uc0\u8259 	}YelpDBException: A special exception class created for exceptions thrown from the DatabaseAccess package\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	2)	}General Classes - An assortment of small helper classes\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}AutocompleteHelper: Contains static helper methods that format data to be used by the BusinessName autocomplete on the front end\
+{\listtext	\uc0\u8259 	}DateTimeHelper: A static method for converting the datetime string returned by the front end into the joda format, which is used by the Java classes\
+{\listtext	\uc0\u8259 	}DummieDataImport: Used for automatically importing dummie wait time data for testing purposes\
+{\listtext	\uc0\u8259 	}HTMLHelper: Static methods to format output into HTML tables\
+{\listtext	\uc0\u8259 	}Restaurant: A Java Object representing a Yelp restaurant listing\
+{\listtext	\uc0\u8259 	}Tag: A Java Object representing an autocomplete tag\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	3)	}WebServer - Servlet Classes for the different endroutes of the website\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}AutocompleteServlet: this servlet receives the characters the user has typed so far and returns potential autocomplete tags as a JSON array\
+{\listtext	\uc0\u8259 	}CustomerServlet: Handles the "I am a customer" page\
+{\listtext	\uc0\u8259 	}IndexServlet: The homepage\
+{\listtext	\uc0\u8259 	}LoginServlet: For authenticating login\
+{\listtext	\uc0\u8259 	}NearbyServlet: receives longitude and latitude of user and returns nearby restaurants\
+{\listtext	\uc0\u8259 	}OwnerServlet: Handlers the "I am an owner" page\
+{\listtext	\uc0\u8259 	}QuickeatServlet: receives longitude and latitude of user and returns a list of the quickest restaurants to eat at\
+{\listtext	\uc0\u8259 	}SignupSerlvet: Allows restaurant owners to sign up for accounts\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+
+\b data
+\b0 \
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\cf0 Contains query results that helped us build our test data.\
+\
+
+\b Libraries
+\b0 \
+JARs of libraries we used in the project.\
+\
+
+\b SQLFiles
+\b0 \
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls2\ilvl0\cf0 {\listtext	1)	}AlgorithmQuery: A SQL file that contains the query that implements the QuickEat algorithm. Reproduced in the Algorithm java file in the database access package\
+{\listtext	2)	}TableDefinitions: SQL DDL for the tables used in our project\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\cf0 \
+
+\b Templates\
+
+\b0 Contains all of the Freemarker templates for our front end.  FreeMarker is the templating engine we used.\
+\
+
+\b Webcontent\
+
+\b0 Contains the public web content.}

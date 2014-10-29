@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE AlgorithmConfig SYSTEM "AlgorithmConfig.dtd">
+
+<AlgorithmParameters>
+	<CurrentTimeThreshold>30</CurrentTimeThreshold>
+	<OwnerWaitTimeThreshold>120</OwnerWaitTimeThreshold>
+	<DistanceToTimeConversionFactor>0.1</DistanceToTimeConversionFactor>
+</AlgorithmParameters>

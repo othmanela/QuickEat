@@ -1,0 +1,491 @@
+/*  
+	#################### 
+	Theme By : Ben Elias 
+	Contact me for more infos : benihia.elias@gmail.com
+	Facebook me : https://www.facebook.com/Maarianhamina
+	####################
+
+	Width Wrapper: 980px;
+	color: Base : #009ee0;
+	color Hover : #004b96;
+
+*/
+
+
+
+/*************************************************************************
+********************* General Style **************************************
+*************************************************************************/
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	color: #777;
+	background-color: #fff;
+}
+h1,h2,h3,h4,h5,h6{
+	margin-bottom: 9px;
+	font-weight: normal;
+}
+h1{
+	font-size:42px;
+	line-height: 44px;
+}
+h2{
+	font-size: 32px;
+	line-height: 34px;
+}
+h3{
+	font-size:24px;
+	line-height: 29px;
+}
+h4{
+	font-size:20px;
+	line-height: 25px;	
+}
+h5{
+	font-size:16px;
+	line-height: 21px;
+}
+h6{
+	font-size:14px;
+	line-height: 17px;
+}
+ul, ol	{
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+blockquote {
+	float: left;
+	width: 60%;
+}
+blockquote.left {
+	margin: 10px 15px 15px 0;
+	padding: 0 15px 0 0;
+	border-right: 4px solid #ddd;
+	text-align: right;
+}
+blockquote.right {
+	float: right;
+	margin: 10px 0 15px  15px;
+	padding: 0 0 0 15px;
+	border-left: 4px solid #ddd;
+}
+blockquote p {
+    font: 16px/17px Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: italic;
+	color: #aaa;	
+}
+p {
+	margin-bottom: 14px;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+em {
+	font-style: italic;
+}
+strong, b {
+	font-weight: bold;
+}
+input, textarea, select {
+	outline: medium none;
+	font-family:  Helvetica, Arial, sans-serif;
+	font-size:12px;
+	color: #bbb;
+	border: 1px solid #ddd;
+	-moz-border-radius: 1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+	-webkit-transition: all 0.2s ease-out 0s;   
+	-moz-transition: all 0.2s ease-out 0s;
+	-o-transition: all 0.2s ease-out 0s; 
+	background-color: #f7f7f7; 
+	padding: 8px;
+}
+input:focus, textarea:focus, select:focus {
+	border: 1px solid #8DC5C5;
+	background-color: #fff;
+	color: #676767;
+	box-shadow:0 0 4px rgba(82,168,236,.5);
+	-moz-box-shadow:0 0 4px rgba(82,168,236,.5);
+	-webkit-box-shadow:0 0 4px rgba(82,168,236,.5);
+}
+input.submit, input.submit:focus, input.submit:active {
+	cursor:pointer;
+	text-align:center;
+	text-transform: uppercase;
+	font-size:11px;
+	font-weight: bold;
+	line-height: 14px;
+    color: #fff;
+	text-decoration:none !important;	
+	padding: 7px;
+	border: none;
+	-moz-border-radius: 20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	box-shadow:0 0 0;
+	-moz-box-shadow:0 0 0;
+	-webkit-box-shadow:0 0 0;
+}
+input.submit:hover {
+	background-color: #707070;
+}
+a { 
+	text-decoration: none;
+	outline:none;
+	color: #444;
+}
+
+ul, li {
+	list-style: none;
+}
+
+::selection {
+color: white;
+background: #000;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+/******************
+ ***** HEADER *****
+ ******************/ 
+
+#header {
+	width: 100%;
+	overflow: hidden;
+	background: #359FB5;
+	background-image: url(images/pattern.png);
+	background-repeat: repeat;
+}
+
+#page {
+	position: relative;
+	width: 980px;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+
+#header .box-user {
+	float: right;
+	overflow: hidden;
+	position: relative;
+	width: auto;
+	top: 20px;
+	background: rgba(0, 0, 0, 0.08);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 6px 20px;
+}
+
+#header .box-user span.span_log {
+	padding-right: 5px;
+}
+
+#header .box-user span.span_reg {
+	padding: 0 5px 0 10px;
+	border-left: 1px solid #FFF;
+}
+
+#header .box-user span a {
+	color: #FFD7DE;
+}
+
+#header .headercontent {
+	width: 770px;
+	margin: 40px auto 0 auto;
+	text-align: center;
+}
+
+#header .headercontent h2 {
+	color: #FFF;
+	font-size: 28px;
+	text-shadow: 0px 2px 3px #000;
+	letter-spacing: -1px;
+}
+
+#header .headercontent .bg-header-map {
+	width: 768px;
+	height: 323px;
+}
+
+#header .header-foot1, #header .header-foot2 {
+	width: 100%;
+	height: 60px;
+	text-align: center;
+}
+
+#header .header-foot1 {
+	background: rgba(9, 102, 121, 0.95);
+	position: fixed;
+	z-index: 1000;
+	background-image: url(images/pattern.png);
+	background-repeat: repeat;
+	-webkit-box-shadow: 0px 0px 8px #000;
+	-moz-box-shadow: 0px 0px 8px #000;
+	box-shadow: 0px 0px 8px #000;
+}
+
+#header .header-foot2 {
+	background: rgba(0, 0, 0, 0.65);
+}
+
+.features {
+	width: 740px;
+	margin: 0 auto;
+	position: relative;
+	top: 17px;
+}
+
+.features li {
+	font-size: 16px;
+	height: 25px;
+	text-shadow: 1px 1px 0 #111;
+	float: left;
+	padding: 3px 0 0 29px;
+	margin-right: 40px;
+	background: rgba(0, 0, 0, 0) url(images/icons-start.png) no-repeat;
+}
+
+.features li.logo {
+	background: url(images/logo-menu.png) no-repeat 0% 0%;
+	width: 90px;
+	margin-right: 70px;
+}
+
+.features li.logo.current-logo {
+	background: url(images/logo-menu.png) no-repeat 0% 110%;
+}
+
+.features li.logo a {
+	text-indent: -9000px;
+	display: inline-block;
+}
+
+.features li a {
+	color: #FFF;
+}
+
+.features li a.current {
+	color: #DBB416;
+}
+
+.features h2 {
+	font-size: 16px;
+	font-weight: bold;
+	display: inline;
+	line-height: 0.5em;
+}
+
+.features li.fe2 {
+	background-position: 0 -65px;
+}
+
+.features li.fe3 {
+	background-position: 0 -133px;
+}
+
+.features li.last {
+	margin-right: 0!important;
+}
+
+.footerbooking {
+	width: 260px;
+	position: relative;
+	top: 8px;
+	margin: 0 auto;
+}
+
+.footerbooking .btn-block {
+	display: inline !important;
+}
+
+/*******************
+ ***** CONTENT *****
+ *******************/ 
+
+#content {
+	width: 990px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+}
+
+.center-bloc {
+	padding: 40px;
+	text-align: center;
+}
+
+.center-bloc span {
+	font-size: 23px;
+	line-height: 32px;
+	font-style: italic;
+	color: #999;
+	letter-spacing: -1px;
+}
+
+.chosecity {
+	background: url(images/choose-city.png) no-repeat 0 0 rgba(0, 0, 0, 0);
+	width: 980px;
+	height: 115px;
+	margin: 50px 0 0 0;
+	padding-bottom: 30px;
+}
+
+.chosecity a.city-single {
+	position: relative;
+	left: 360px;
+	top: 53px;
+	background: rgba(0, 0, 0, 0) url(images/choose-city-select.png) no-repeat 0 0;
+	width: 264px;
+	height: 45px;
+	display: block;
+	color: #FFF;
+	font-size: 30px;
+	text-shadow: 2px 2px 0 #CC6A00;
+	padding: 15px 0 0 24px;
+	font-weight: bold;
+}
+
+.wrapper-1 {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 620px;
+}
+
+.wrapper-2 {
+	position: relative;
+	float: right;
+	overflow: hidden;
+	width: 320px;
+}
+
+.wrapper-1 h3 {
+	color: #359FB5;
+	font-size: 20px;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+ul.restaurant-box {
+	padding-top: 20px;
+}
+
+ul.restaurant-box li {
+	display: inline-block;
+	width: 180px;
+	height: 192px;
+	background: #F1F1F1;
+	margin: 0 20px 15px 0;
+	border: 1px solid #EBEBEB;
+	border-bottom: 3px solid #E4E2E2;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	-webkit-transition: background 0.3s ;
+	-moz-transition: background 0.3s ;
+	-ms-transition: background 0.3s ;
+	-o-transition: background 0.3s ;
+	transition: background 0.3s ;
+}
+
+ul.restaurant-box li:hover {
+	background: white;
+}
+
+ul.restaurant-box li img {
+	width: 160px;
+	height: 130px;
+	margin-top: 10px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+ul.restaurant-box li a {
+	display: block;
+}
+
+ul.restaurant-box li a.name-restaurant {
+	font-size: 15px;
+	color: black;
+}
+
+ul.restaurant-box li a.miles-restaurant {
+	font-size: 13px;
+	color: #838383;
+}
+
+/* Form General */
+
+.form-gen {
+	width: 490px;
+	padding: 30px;
+	margin: 0 auto;
+	background: #FDFDFD;
+	border: 1px solid #E6E6E6;
+	border-bottom: 3px solid #E6E6E6;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.form-gen ul {
+	padding: 10px 0;
+}
+
+.form-gen ul li {
+	display: block;
+}
+
+.form-gen input[type="text"] {
+	width: 200px;
+	height: 22px;
+	border: 1px solid #F1F1F1;
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-top: 0;
+	background: #F1F1F1;
+	color: #434343;
+	font-size: 13px;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset;
+	-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset;
+}
+
+.form-gen label {
+	width: 260px;
+	color: #000;
+	display: inline-block;
+	text-align: left;
+}
+
+.form-gen span.formnote {
+	display: block;
+	clear: left;
+	padding: 10px 0;
+	font-size: 14px;
+	letter-spacing: 0;
+	font-style: normal;
+	color: #272727;
+	text-align: left;
+}
+
+
+
+
+
+
+
+

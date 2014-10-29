@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT AlgorithmParameters (CurrentTimeThreshold, OwnerWaitTimeThreshold,
+								 DistanceToTimeConversionFactor)>
+<!ELEMENT CurrentTimeThreshold (#PCDATA)>
+<!ELEMENT OwnerWaitTimeThreshold (#PCDATA)>
+<!ELEMENT DistanceToTimeConversionFactor (#PCDATA)>
